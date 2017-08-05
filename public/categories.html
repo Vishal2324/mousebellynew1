@@ -1,0 +1,107 @@
+<div class="container" style="margin: auto; width: 95%; border: 0px solid red; background-color: rgba(255,255,255,0.8);">
+    
+    	<div class="container-fluid" style="text-align: center;">
+ 
+		<h3 style="color:#8e0808;font-family:soho; font-weight:900;font-size: 4.55em;">Food &nbsp;Category</h3>
+		
+		<button class="btn btn-primary" ng-click="addCategory();">Add Category</button>
+
+		
+		</div>
+	
+		<hr>
+
+	<div class="container-fluid">
+ 
+	  <div class="col-lg-2" style="text-align: center;">
+	  	<label style="color:#155b05;font-family: 'Carrois Gothic', sans-serif; font-weight:5	00;font-size: 1.55em;">##</label>	
+	  </div>
+
+	  <div class="col-lg-2" style="text-align: center;">
+	  	<label style="color:#155b05;font-family: 'Carrois Gothic', sans-serif; font-weight:500;font-size: 1.55em;">Food Category</label>
+	  </div>
+
+	  <div class="col-lg-3" style="text-align: center;">
+	  	<label style="color:#155b05;font-family: 'Carrois Gothic', sans-serif; font-weight:500;font-size: 1.55em;">Category Description</label>
+	  </div>
+
+	  <div class="col-lg-2" style="text-align: center;">
+	  	<label style="color:#155b05;font-family: 'Carrois Gothic', sans-serif; font-weight:500;font-size: 1.55em;">#Edit</label>
+	  </div>
+
+	  <div class="col-lg-2" style="text-align: center;">
+	  	<label style="color:#155b05;font-family: 'Carrois Gothic', sans-serif; font-weight:500;font-size: 1.55em;">#Delete</label>
+	  </div>
+
+	</div>
+
+	<hr>
+
+	<div class="container-fluid" ng-repeat="x in category_Arr">
+
+	  <div class="col-lg-2" style="text-align: center;">
+	  		<h4 style="font-family: 'Carrois Gothic', sans-serif; font-weight:200;">{{x.categoryId}}</h4>
+	  </div>
+
+	  <div class="col-lg-2" style="text-align: center;">
+			<h4 style="font-family: 'Carrois Gothic', sans-serif; font-weight:200;">{{x.categoryName}}</h4>	  	
+	  </div>
+
+	  <div class="col-lg-3" style="text-align: center;">
+	  <h4 style="font-family: 'Carrois Gothic', sans-serif; font-weight:200;">{{x.categoryDescription}}</h4>	  
+	  </div>
+
+	   <div class="col-lg-2" style="text-align: center;">
+	  	<button class="btn btn-warning" ng-click="editCategory($index)">Edit</button>
+	  </div>
+
+	  <div class="col-lg-2" style="text-align: center;">
+	  	<button class="btn btn-danger" ng-click="deleteCategory($index)">Delete</button>
+	  </div>
+
+	</div>
+	
+	<div id="homechefModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>	
+
+	<div id="addhomechefModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>	
+
+
+
+
+</div>

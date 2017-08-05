@@ -1,0 +1,108 @@
+<div class="container" style="margin: auto; width: 95%; border: 0px solid red; background-color: rgba(255,255,255,0.8);">
+    <div class="container-fluid">
+    	<div class="col-lg-4">
+    	</div>
+    	
+    	<div class="col-lg-4">
+		<h3 style="color:#8e0808;text-align: center;font-family:soho; font-weight:900;font-size: 4.55em;">Your &nbsp;Profile</h3>
+		</div>
+		<div class="col-lg-4" style="margin-top: 32px">
+		<a data-toggle="modal" data-target="#myModal" id="setting"><span class="glyphicon glyphicon-cog"></span></a>
+		</div>
+	</div>
+	<hr>
+	<div class="container-fluid" style="text-align: center;"> 
+		<img src="images/profile.jpg" class="img-circle" alt="Cinque Terre" width="250" height="250" id="doubleBorder"> 
+
+		<br> 	 
+ 	 	<h3 data-toggle="modal" data-target="#myModal" style="color:#155b05;font-family: 'Carrois Gothic', sans-serif; font-weight:200;font-size: 2.55em;">Vishal Bajaj</h3>
+ 
+	</div>
+	<hr>
+
+	<script>
+		function myFunction() {
+   		 var x = document.getElementById('myDIV');
+   		 if (x.style.display === 'none') {
+        x.style.display = 'block';
+    	}
+    	 else {
+        x.style.display = 'none';
+    		}
+		}
+
+	/*	$("button.toggleButton").click(function(){
+   		]
+    
+    	if ($.trim($(this).text()) === 'Show Answer') {
+        $(this).text('Hide Answer');
+    	} else {
+        $(this).text('Show Answer');        
+    	}
+    
+   	 return false; 
+	});*/
+	</script>
+
+
+	<!-- ACCORDION -->
+	<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+</script>
+
+	<button class="accordion">FOOD <span class="glyphicon glyphicon-cutlery"></span></button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">MEAL PLAN &nbsp;<span class="glyphicon glyphicon-calendar"></span></button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">RECIPES &nbsp;<span class="glyphicon glyphicon-book"></span></button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">VIDEOS &nbsp;<span style="margin-bottom: 10px" class="glyphicon glyphicon-facetime-video"></span></button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+
+	<hr>
+
+ <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 style="color:#8e0808;text-align: center;font-family:soho; font-weight:900;font-size: 3.55em;">Edit &nbsp;Profile</h3>
+        </div>
+        <div class="modal-body">
+        <div class="container" style="margin: auto; width: 100%; border: 0px solid red; padding-left: 0px;padding-right: 0px;" ng-app="myApp" ng-controller="formController">
+	    <div ui-view="homechef" style="margin: auto; width: 100%; border: 0px solid red;"></div>
+	</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

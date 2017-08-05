@@ -1,0 +1,151 @@
+<div class="container" style="margin: auto; width: 95%; border: 0px solid red; background-color: rgba(255,255,255,0.8);">
+
+ <div ui-view="modal" autoscroll="false"></div>
+<div class="row">
+
+	<h3 style="color:#8e0808;font-family: soho; font-weight:900;font-size: 4.55em; text-align: center;">Home &nbsp;Chef(s)</h3>
+
+	</div>
+	<hr>
+	<br>
+	<div class="container"> 
+	<div class="row">
+	<div class="col-lg-3">
+		<img src="images/profile.jpg" width="160px" height="150px">		
+
+	</div>
+	<div class="col-lg-9" style="margin-top: 15px">
+	<div class="col-lg-5">
+	<a href="" ><font style="color:#000000;font-family: 'Carrois Gothic', sans-serif; font-weight:200;font-size: 2.55em;padding-top: 50">Sunita Kumar</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	
+	<!-- <fieldset style="margin-left:0px;">
+                  <div ng-init="rating = star.rating "></div>
+                  <div class="star-rating" star-rating  rating-value='5' data-max="5" on-rating-selected=""></div>
+                  </fieldset> -->
+	
+		<br>
+	<font style="color:#155b05;font-family: 'Carrois Gothic', sans-serif; font-weight:200;font-size: 1.55em;padding-top: 50">Phone No. : 7876781241</font>
+	<br>
+	
+	</div>
+	<div class="col-lg-2">
+
+		<button style="margin-top: 10px" class="btn btn-success" ng-click="viewHomeChef()">View</button>
+	<br>
+	</div>
+
+	<div class="col-lg-2">
+
+		
+		<button style="margin-top: 10px" class="btn btn-danger" ng-click="DeleteRecipe($index)">Delete</button>
+	<br>
+	</div>
+	</div>
+	</div>
+	<hr>
+	<br>
+	</div>
+	   <!-- modal 2 -->
+   <div class="modal fade" id="homechefModal" role="dialog">
+    <div class="modal-dialog"  style="margin: auto;width: 80%; margin-top: 3%;">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="padding: 20px;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+       <!--    <h4 class="modal-title" style="color:#8e0808;font-family: soho; font-weight:500;font-size: 3.55em; text-align: center;">Recipe View</h4> -->
+       <div style="text-align: center;margin-top: -20px">
+       <label class="Mouselabel" style="border: 0px solid red; font-size: 1.55em">Mouse</label>
+			<label class="Bellylabel" style="border: 0px solid red;font-size: 1.55em">Belly</label>
+			</div>
+        </div>
+        <div class="modal-body"	>
+        	<div class="container-fluid"> 
+        	<div class="col-lg-6">
+		<img src="images/profile.jpg" style="margin-left:60px" class="img-circle" alt="Cinque Terre" width="250" height="250" id="doubleBorder"> 
+		</div>
+		 <div class="col-lg-6">
+ 	 	<h3 data-toggle="modal" data-target="#myModal" style="color:#000;font-family: 'Carrois Gothic', sans-serif; font-weight:200;font-size: 2.15em;">Name : Vishal Bajaj</h3>
+ 	 	<h3 data-toggle="modal" data-target="#myModal" style="color:#155b05;font-family: 'Carrois Gothic', sans-serif; font-weight:200;font-size: 1.75em;">Email : sunitakumar@gmail.com</h3>
+ 	 	<h3 data-toggle="modal" data-target="#myModal" style="color:#155b05;font-family: 'Carrois Gothic', sans-serif; font-weight:200;font-size: 1.75em;">Phone No. : 7876781240</h3>
+ 	 	<h3 data-toggle="modal" data-target="#myModal" style="color:#155b05;font-family: 'Carrois Gothic', sans-serif; font-weight:200;font-size: 1.75em;">Date oF Birth : 23/12/1996</h3>
+ 			</div>
+	</div>
+	<hr>
+
+	<script>
+		function myFunction() {
+   		 var x = document.getElementById('myDIV');
+   		 if (x.style.display === 'none') {
+        x.style.display = 'block';
+    	}
+    	 else {
+        x.style.display = 'none';
+    		}
+		}
+
+	/*	$("button.toggleButton").click(function(){
+   		]
+    
+    	if ($.trim($(this).text()) === 'Show Answer') {
+        $(this).text('Hide Answer');
+    	} else {
+        $(this).text('Show Answer');        
+    	}
+    
+   	 return false; 
+	});*/
+	</script>
+
+
+	<!-- ACCORDION -->
+	<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+</script>
+
+	<button class="accordion">FOOD <span class="glyphicon glyphicon-cutlery"></span></button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">MEAL PLAN &nbsp;<span class="glyphicon glyphicon-calendar"></span></button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">RECIPES &nbsp;<span class="glyphicon glyphicon-book"></span></button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">VIDEOS &nbsp;<span style="margin-bottom: 10px" class="glyphicon glyphicon-facetime-video"></span></button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+   	
+        </div>
+       
+      
+    </div>
+
+
+  </div>
+
+	
+
+</div>
+</div>

@@ -1,0 +1,100 @@
+<div class="row" style="margin: auto; width: 100%;">
+<div class="" style="margin: auto; width: 100%; border: 0px solid red;">
+
+  <div id="form-container">
+  
+      <div class="page-header text-center">
+      <button id="homebutton" style="left: 600px"><img src="images/MB_black_small.png" style="width: 50px;height: 50px"></button>
+          <!-- <h2 style="">as a</h2> -->
+          <h2 >Hello User</h2>
+                  <br>
+          <!-- the links to our nested states using relative paths -->
+          <!-- add the active class if the state matches our ui-sref -->
+
+          <div id="signupErrorModal" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+
+			    <!-- Modal content-->
+			    <div class="modal-content" style="text-align: center; margin-top: 70px;">
+			      <div class="modal-body">
+			      	<label class="signupMouselabel" style="">Mouse</label>
+					<label class="signupBellylabel" style="">Belly</label>
+					<br>
+					<br>
+			        <p ng-if="Part1Errors" class="alert alert-danger" style="font-size: 32px; margin: auto; width: 80%;">Please fill in the data for Part One correctly.</p>
+			        <br>
+
+			        <p ng-if="!Part1Errors && Part2Errors" class="alert alert-danger" style="font-size: 32px; margin: auto; width: 80%;">Please fill in the data for Part Two correctly.</p>
+			        <br>
+
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+
+			  </div>
+			</div>
+
+      <div id="termsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content" style="text-align: center; margin-top: 70px;">
+            <div class="modal-body">
+              <label class="signupMouselabel" style="">Mouse</label>
+              <label class="signupBellylabel" style="">Belly</label>
+              <br>
+              <br>
+                <!-- toggle t&c -->
+     <script>   
+$(document).ready(function(){  
+    $("#flip").click(function(){  
+        $("div.d1").slideDown("slow");  
+    });  
+});  
+</script> 
+                <input type="checkbox" ng-model="checked"><p>I agree to the Terms & Conditions.</p><br>
+                <button  class="btn btn-link">Terms & Conditions</button>  
+                 <button id="flip" class="btn btn-link">Privacy Policy</button>  
+                    <div class="d1" style="border:1px solid black;padding:10px;width:550px">    
+                    <p >Privacy Policy content</p>     
+                    </div>
+
+               
+                 <button class="btn btn-danger" ng-model="button" ng-disabled="!checked">Submit</button>
+
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div> -->
+          </div>
+
+        </div>
+      </div>
+
+          <div id="status-buttons" class="text-center">
+          		<!-- eat-click-if="ShowPart1Errors()" -->
+
+              <a eat-click-if="Part1Filled == true && ShowPart2Errors()" ui-sref-active="active" ui-sref=".profile"><span>1</span> Profile</a>
+              <a eat-click-if="ShowPart1Errors()" ui-sref-active="active" ui-sref=".interests" ng-click="LoadPart2()" ><span>2</span> Address</a>
+              <a eat-click-if="ShowPart1Errors() || ShowPart2Errors()" ui-sref-active="active" ui-sref=".payment"><span>3</span> Picture</a>
+          </div>
+      </div>
+      
+      <!-- use ng-submit to catch the form submission and use our Angular function -->
+      <form id="signup-form">
+          <!-- our nested state views will be injected here -->
+          <div id="form-views" ui-view ></div>
+      </form>
+  
+  </div>
+  
+  <!-- show our formData as it is being typed -->
+  <!-- <pre>
+    {{ formData }}
+  </pre> -->
+
+</div>
+</div>
+

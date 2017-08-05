@@ -1,0 +1,81 @@
+<div class="container" style="margin: auto; width: 95%; border: 0px solid red; background-color: rgba(255,255,255,0.8);">
+
+ <div ui-view="modal" autoscroll="false"></div>
+<div class="row">
+	<div class="col-lg-4" style="margin-top:35px">
+	<a href="#!addRecipe" style="color:#8e0808;font-size: 1.75em;margin-top:100px;margin-right:200px"><span class="glyphicon glyphicon-arrow-left"></span>&nbsp;Add Recipe</a>
+	</div>
+	<div class="col-lg-4">
+	<h3 style="color:#8e0808;font-family: soho; font-weight:900;font-size: 4.55em; text-align: center;">Your &nbsp;Recipe(s)</h3>
+	</div>
+	<div class="col-lg-4"></div>
+
+	</div>
+	<hr>
+	<br>
+	<div class="container" ng-repeat="x in json_arr"> 
+	<div class="row">
+	<div class="col-lg-3">
+		<img src="images/gulabjamun.jpeg" width="220px" height="200px">		
+
+	</div>
+	<div class="col-lg-9" style="margin-top: 15px">
+	<div class="col-lg-5">
+	<a href="" ><font style="color:#000000;font-family: 'Carrois Gothic', sans-serif; font-weight:200;font-size: 2.55em;padding-top: 50">{{x.RecipeName}}</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	
+	<!-- <fieldset style="margin-left:0px;">
+                  <div ng-init="rating = star.rating "></div>
+                  <div class="star-rating" star-rating  rating-value='5' data-max="5" on-rating-selected=""></div>
+                  </fieldset> -->
+	
+		<br>
+	<font style="color:#155b05;font-family: 'Carrois Gothic', sans-serif; font-weight:200;font-size: 1.55em;padding-top: 50">Time to Make : {{x.timetoMake}} minute(s)</font>
+	<br>
+	<font style="color:#155b05;font-family: 'Carrois Gothic', sans-serif; font-weight:200;font-size: 1.55em;padding-top: 50">Serving Size : {{x.ServingSize}} Person(s)</font>
+	</div>
+	<div class="col-lg-2">
+
+		<button style="margin-top: 10px" class="btn btn-success" ng-click="viewRecipe($index)">View/Edit</button>
+	<br>
+	</div>
+
+	<div class="col-lg-2">
+
+		
+		<button style="margin-top: 10px" class="btn btn-danger" ng-click="DeleteRecipe($index)">Delete</button>
+	<br>
+	</div>
+	</div>
+	</div>
+	<hr>
+	<br>
+	</div>
+	   <!-- modal 2 -->
+   <div class="modal fade" id="RecipeModal" role="dialog">
+    <div class="modal-dialog"  style="margin: auto;width: 80%; margin-top: 3%;">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="padding: 20px;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+       <!--    <h4 class="modal-title" style="color:#8e0808;font-family: soho; font-weight:500;font-size: 3.55em; text-align: center;">Recipe View</h4> -->
+       <div style="text-align: center;margin-top: -20px">
+       <label class="Mouselabel" style="border: 0px solid red; font-size: 1.55em">Mouse</label>
+			<label class="Bellylabel" style="border: 0px solid red;font-size: 1.55em">Belly</label>
+			</div>
+        </div>
+        <div class="modal-body" ng-app="myApp" ng-controller="RecipeController">
+
+		<div ui-view="RecipeModal" style="padding: 10px"></div>   	
+        </div>
+       
+      
+    </div>
+
+
+  </div>
+
+	
+
+</div>
+</div>

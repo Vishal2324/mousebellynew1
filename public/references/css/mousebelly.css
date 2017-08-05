@@ -1,0 +1,1216 @@
+* {
+   outline: none !important;
+}
+
+
+.masthead
+{
+  position: fixed;
+  top: 0px;
+
+  box-shadow: 0px 0px 0px #777777;
+  height: 100px;
+  width: 20%;
+
+
+}
+
+.navbar-toggle1
+{
+  float: right;
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+}
+
+.navbar-toggle1:hover
+{
+  background-color: white;
+}
+
+.navback
+{
+  background-image: url("/images/mastback.jpg");
+  background-size: cover;
+
+  box-shadow: 0px 0px 0px #777777;
+  height: 100px;
+  width: 100%;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 10% 50%;
+
+  border: none;
+}
+
+.SignupButton
+{
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  background-color: none;
+
+  color: #FFFFFF;
+
+  border: 1px solid #FFFFFF;
+
+  margin-top: 25px;
+
+  height: 50px;
+  line-height: 20px;
+
+  padding-top: -5px;
+}
+
+.SignupButton:hover
+{
+  box-shadow: inset 0px 0px 120px #CCCCCC;
+
+}
+
+.LoginButton
+{
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  background-color: none;
+
+  color: #FFFFFF;
+
+  border: 1px solid #FFFFFF;
+
+  margin-top: 25px;
+  height: 50px;
+  line-height: 20px;
+
+
+  padding-top: -5px;
+}
+
+.LoginButton:hover
+{
+  box-shadow: inset 0px 0px 120px #CCCCCC;
+
+}
+
+.bodystyle
+{
+  /*background-image: url("/images/doodle.jpg") , linear-gradient(#000000, #d13531);
+  background-size: 520px 590px;
+  background-repeat: repeat;*/
+  background: linear-gradient( rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85) ), url("/images/doodle.jpg") 10% repeat;
+  background-size: 520px 590px;
+}
+
+.head
+{
+  position: fixed;
+
+  top: 0px;
+  box-shadow: 0px 0px 20px #777777;
+
+  height: 100px;
+  width: 100%;
+
+
+  background-color: transparent;
+}
+
+.loader {
+    position: fixed;
+    border: none; /* Light grey */
+    border-bottom: 32px solid #3498db; /* Blue */
+    /*border-bottom: 16px double #770000;*/ /* Blue */
+    border-radius: 100%;
+    width: 420px;
+    height: 420px;
+
+    z-index: 1000000000
+
+
+
+
+    ;
+
+    margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+    left: 0;
+    right: 0;
+
+    box-shadow: 0px 0px 5px #CCCCCC;
+
+    background-color: #ffffff;
+    animation: spin 2s linear infinite;
+}
+
+.loginloader {
+
+    position: relative;
+    border: none; /* Light grey */
+    border-bottom: 2px solid #3498db; /* Blue */
+    /*border-bottom: 16px double #770000;*/ /* Blue */
+    border-radius: 100%;
+    width:85px;
+    padding-top: 85px;
+    /*height: 100%;*/
+
+    z-index: 1;
+
+    margin: auto; /* Will not center vertically and won't work in IE6/7. */
+    left: 0;
+    right: 0;
+
+    box-shadow: 0px 0px 5px #CCCCCC;
+
+    background-color: white;
+    animation: spin 2s linear infinite;
+}
+
+.checkusernameinDBloader {
+
+    position: relative;
+    border: none; /* Light grey */
+    border-bottom: 2px solid #3498db; /* Blue */
+    /*border-bottom: 16px double #770000;*/ /* Blue */
+    border-radius: 100%;
+    width:55px;
+    padding-top: 55px;
+    /*height: 100%;*/
+
+    z-index: 1;
+
+    margin: auto; /* Will not center vertically and won't work in IE6/7. */
+    left: 0;
+    right: 0;
+
+    margin-top: -20px;
+
+    box-shadow: 0px 0px 5px #CCCCCC;
+
+    background-color: white;
+    animation: spin 2s linear infinite;
+}
+
+.checkusernameinDBinnerloader {
+    border-radius: 0%;
+    width: 55px;
+    position: relative;
+
+    margin: auto;
+    left: 0;
+    right: 0;
+
+    margin-top: -110px;
+
+    border: 0px solid red;
+
+    z-index: 50;
+
+    background-color: none;
+
+
+}
+
+.checkemailinDBloader {
+
+    position: relative;
+    border: none; /* Light grey */
+    border-bottom: 2px solid #3498db; /* Blue */
+    /*border-bottom: 16px double #770000;*/ /* Blue */
+    border-radius: 100%;
+    width:55px;
+    padding-top: 55px;
+    /*height: 100%;*/
+
+    z-index: 1;
+
+    margin: auto; /* Will not center vertically and won't work in IE6/7. */
+    left: 0;
+    right: 0;
+
+    margin-top: -20px;
+
+
+    box-shadow: 0px 0px 5px #CCCCCC;
+
+    background-color: white;
+    animation: spin 2s linear infinite;
+}
+
+.checkemailinDBinnerloader {
+    border-radius: 0%;
+    width: 55px;
+    position: relative;
+
+    margin: auto;
+    left: 0;
+    right: 0;
+
+    margin-top: -110px;
+
+    border: 0px solid red;
+
+    z-index: 50;
+
+    background-color: none;
+
+
+}
+
+.checkphoneinDBloader {
+
+    position: relative;
+    border: none; /* Light grey */
+    border-bottom: 2px solid #3498db; /* Blue */
+    /*border-bottom: 16px double #770000;*/ /* Blue */
+    border-radius: 100%;
+    width:55px;
+    padding-top: 55px;
+    /*height: 100%;*/
+
+    z-index: 1;
+
+    margin: auto; /* Will not center vertically and won't work in IE6/7. */
+    left: 0;
+    right: 0;
+
+    margin-top: -20px;
+
+    box-shadow: 0px 0px 5px #CCCCCC;
+
+    background-color: white;
+    animation: spin 2s linear infinite;
+}
+
+.checkphoneinDBinnerloader {
+    border-radius: 0%;
+    width: 55px;
+    position: relative;
+
+    margin: auto;
+    left: 0;
+    right: 0;
+
+    margin-top: -110px;
+
+    border: 0px solid red;
+
+    z-index: 50;
+
+    background-color: none;
+
+
+}
+
+@keyframes spin1 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@-moz-keyframes spin1 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin1 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.MouseBellyLabel
+{
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  left: 130px;
+  height: 6em;
+  line-height: 6em;
+  position: absolute;
+  top: 10px;
+  width: 28%;
+  margin-right: 20px;
+  padding: 10px;
+
+  padding-top: 1.25em;
+
+  text-align: center;
+
+  border: 1px solid #770000;
+
+  box-shadow: inset 0px 0px 8px #999999;
+}
+
+.Mouselabel
+{
+  font-family: 'Satisfy', cursive;
+  font-size: 2em;
+
+  position: relative;
+  top: 0.3em;
+
+  color: #99A706;
+
+  font-weight: 100;
+}
+
+.Mouselabel::first-letter {
+    font-size: 2.5em;
+
+}
+
+
+.loginMouselabel
+{
+  font-family: 'Satisfy', cursive;
+  font-size: 32px;
+
+  position: relative;
+  top: 0.3em;
+
+  margin-bottom: -20px;
+
+  color: #99A706;
+
+  font-weight: 100;
+}
+
+.loginMouselabel::first-letter {
+    font-size: 2.5em;
+
+}
+
+.loginBellylabel
+{
+  font-family: 'Satisfy', cursive;
+  font-size: 32px;
+
+  margin-top: -10px;
+
+  position: relative;
+  top: 0.3em;
+
+  color: #770000;
+
+  font-weight: 100;
+}
+
+.loginBellylabel::first-letter {
+    font-size: 2.5em;
+
+}
+
+.signupMouselabel
+{
+  font-family: 'Satisfy', cursive;
+  font-size: 32px;
+
+  position: relative;
+  top: 0.3em;
+
+  margin-bottom: -20px;
+
+  color: #99A706;
+
+  font-weight: 100;
+}
+
+.signupMouselabel::first-letter {
+    font-size: 2.5em;
+
+}
+
+.signupBellylabel
+{
+  font-family: 'Satisfy', cursive;
+  font-size: 32px;
+
+  margin-top: -10px;
+
+  position: relative;
+  top: 0.3em;
+
+  color: #770000;
+
+  font-weight: 100;
+}
+
+.signupBellylabel::first-letter {
+    font-size: 2.5em;
+
+}
+
+.Bellylabel
+{
+  font-family: 'Satisfy', cursive;
+  font-size: 2em;
+
+  position: relative;
+  top: 0.3em;
+
+  color: rgb(128,0,0);
+
+
+  font-weight: 100;
+}
+
+.Bellylabel::first-letter {
+    font-size: 2.5em;
+
+}
+
+.pageleft
+{
+  position: fixed;
+  width: 30px;
+  height: 100%;
+
+  background-size: 520px 590px;
+  background-repeat: repeat;
+  background-image: url("/images/doodle5.jpg") , linear-gradient(#000000, #d13531);
+  top: 0px;
+  z-index: -1;
+
+  box-shadow: inset 0px 0px 10px #777777;
+}
+
+.pageright
+{
+  position: fixed;
+  width: 30px;
+  height: 100%;
+
+  right: 0;
+
+  background-size: 520px 590px;
+  background-repeat: repeat;
+  background-image: url("/images/doodle5.jpg") , linear-gradient(#000000, #d13531);
+  top: 0px;
+  z-index: -1;
+
+  box-shadow: inset 0px 0px 10px #777777;
+}
+
+.innerloginloader {
+    border-radius: 0%;
+    width: 85px;
+    position: relative;
+
+
+    margin: auto;
+    left: 0;
+    right: 0;
+
+    margin-top: -100px;
+
+    border: 0px solid red;
+
+    z-index: 50;
+
+    background-color: none;
+
+
+}
+
+.innerloader {
+    border-radius: 100%;
+    width: 420px;
+    height: 420px;
+    position: fixed;
+    line-height: 420px;
+
+    font-size: 50px;
+
+    margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1000000000;
+
+    background-color: none;
+
+    animation: spin 0s linear infinite;
+}
+
+#masterLoader{
+
+  position: fixed;
+
+  z-index: 1000000000;
+
+
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    background-image: url('/images/mastback.jpg');background-size: cover;box-shadow: 0px 0px 0px #777777;
+    min-height: 100px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+.address
+{
+  width: 30%;
+  left: 40px;
+}
+
+#googleMap
+{
+  width:100%;height:400px;
+}
+
+#googleMapDiv{
+  margin: auto; width: 100%; border: 0px solid red; padding-left: 0px;padding-right: 0px;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 768px) {
+  .topnav.responsive {position: relative;
+
+  }
+
+  .address
+  {
+    width: 50%;
+    left: 10px;
+  }
+
+  #googleMapDiv
+  {
+    height:400px;
+    margin-left: -10%;
+    width: 120%;
+
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .Mouselabel
+  {
+    top:-2vw;
+    left:-2vw;
+    font-size: 1em;
+  }
+
+  .Bellylabel
+  {
+    font-size: 1em;
+    left: 0vw;
+    top: 0vw;
+  }
+}
+
+.select-menu
+{
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-border-radius: 5px;
+    outline: 1px solid #333333;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+
+}
+
+
+/********************selectsignup.html**************************************/
+
+@font-face {
+    font-family: soho;
+    src: url(/references/fonts/soho-std-thin-condensed-594e714414019.otf);
+}
+
+
+.userwhiteButton {
+  width:50%;
+  height:50%;
+  position:relative;
+  margin-left:20%;
+  margin-top:25%;
+  background:transparent;
+  color:rgb(109,63,135);
+  border:10px solid rgb(109,63,135);
+  font-family: soho;
+  font-size: 8em;
+}
+
+.homechefButton {
+  width:50%;
+  height:50%;
+  position:relative;
+  margin-left:20%;
+  margin-top:25%;
+  background:transparent;
+  color:rgb(255,255,255);
+  border:10px solid rgb(255,255,255);
+  font-family: soho;
+  font-size: 8em;
+}
+
+.userwhiteDiv {
+  background-color: rgba(255,255,255,0.8);
+  margin: auto;
+  width: 50%;
+  height:625px;
+}
+
+.homechefpurpleDiv {
+  background-color: rgba(109,63,135,0.8);
+  margin: auto;
+  width: 50%;
+  height:625px;
+}
+
+
+ .userwhiteDiv:hover   {
+  background-color: rgba(109,63,135,0.8);
+  transition-delay: 0.2s;
+  -webkit-transition-delay: 0.2s;
+}
+
+.userwhiteDiv:hover .userwhiteButton:hover {
+  background-color: rgb(255,255,255);
+  color: rgb(109,63,135);
+  transition-delay: 0.2s;
+  -webkit-transition-delay: 0.2s;
+}
+
+
+.userwhiteDiv:hover ~ .homechefpurpleDiv {
+  background-color: rgba(255,255,255,0.8);
+  transition-delay: 0.2s;
+  -webkit-transition-delay: 0.2s;
+}
+
+
+.userwhiteDiv:hover ~ .homechefpurpleDiv .homechefButton {
+  border: 10px solid rgb(109,63,135);
+  background-color: rgba(255,255,255,0.8);
+  color: rgb(109,63,135);
+  transition-delay: 0.2s;
+  -webkit-transition-delay: 0.2s;
+}
+
+.homechefpurpleDiv:hover .homechefButton:hover {
+  background-color: rgb(255,255,255);
+  color: rgb(109,63,135);
+  transition-delay: 0.2s;
+  -webkit-transition-delay: 0.2s;
+}
+
+.homechefpurpleDiv:hover .homechefButton {
+  border: 10px solid rgb(255,255,255);
+  background-color: rgb(109,63,135);
+  color:white;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+}
+
+.userwhiteDiv:hover .userwhiteButton {
+  border: 10px solid rgb(255,255,255);
+  background-color: rgb(109,63,135);
+  color:white;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .userwhiteDiv {
+    background-color: rgba(255,255,255,0.8);
+    margin: auto;
+    width: 50%;
+    height:400px;
+  }
+
+  .homechefpurpleDiv {
+    background-color: rgba(109,63,135,0.8);
+    margin: auto;
+    width: 50%;
+    height:400px;
+  }
+
+
+  .userwhiteButton {
+    width:80%;
+    height:20%;
+    position:relative;
+    margin-left:10%;
+    margin-top:90%;
+    background:transparent;
+    color:rgb(109,63,135);
+    border:2px solid rgb(109,63,135);
+    font-family: soho;
+    font-size: 2em;
+  }
+
+  .homechefButton {
+    width:80%;
+    height:20%;
+    position:relative;
+    margin-left:20%;
+    margin-top:90%;
+    background:transparent;
+    color:rgb(255,255,255);
+    border:2px solid rgb(255,255,255);
+    font-family: soho;
+    font-size: 2em;
+  }
+
+  .userwhiteDiv:hover ~ .homechefpurpleDiv .homechefButton {
+    border: 2px solid rgb(109,63,135);
+    background-color: rgba(255,255,255,0.8);
+    color: rgb(109,63,135);
+    transition-delay: 0.2s;
+    -webkit-transition-delay: 0.2s;
+  }
+
+  .homechefpurpleDiv:hover .homechefButton {
+    border: 2px solid rgb(255,255,255);
+    background-color: rgb(109,63,135);
+    color:white;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+  }
+
+  .userwhiteDiv:hover .userwhiteButton {
+    border: 2px solid rgb(255,255,255);
+    background-color: rgb(109,63,135);
+    color:white;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+  }
+
+
+}
+
+/*********************************************END*************************/
+
+
+
+.border-red {
+    border: 1px solid red;
+}
+
+/**/
+/* BASIC STYLINGS
+============================================================================= */
+pre                             { margin-bottom:20px; }
+
+/* form styling */
+#form-container                { background:#FFFFFF; margin-bottom:20px;
+    border-radius:5px; }
+#form-container .page-header   { background:none; margin:0; padding:30px;
+    border-top-left-radius:5px; border-top-right-radius:5px; }
+
+/* numbered buttons */
+#status-buttons                 {  }
+#status-buttons a               { color:#000;  display:inline-block; font-size:12px; margin-right:10px; text-align:center; text-transform:uppercase; }
+#status-buttons a:hover         { text-decoration:none; }
+#status-buttons span            { cursor: pointer; color: #000000; background:#FFFFFF; border: 1px solid white; display:block; height:30px; margin:0 auto 10px; padding-top:5px; width:30px;
+    border-radius:50%; }
+
+/* active buttons */
+#status-buttons a.active span   { background:#FFC706; color: black; }
+
+/* ANIMATION STYLINGS
+============================================================================= */
+#signup-form            { position:relative; min-height:300px; overflow:hidden; padding:30px; }
+
+/* basic styling for entering and leaving */
+/* left and right added to ensure full width */
+#form-views.ng-enter,
+#form-views.ng-leave      { position:absolute; left:30px; right:30px;
+    transition:0.5s all ease; -moz-transition:0.5s all ease; -webkit-transition:0.5s all ease;
+}
+
+/* enter animation */
+#form-views.ng-enter            {
+    -webkit-animation:slideInRight 0.5s both ease;
+  -moz-animation:slideInRight 0.5s both ease;
+  animation:slideInRight 0.5s both ease;
+}
+
+/* leave animation */
+#form-views.ng-leave            {
+    -webkit-animation:slideOutLeft 0.5s both ease;
+  -moz-animation:slideOutLeft 0.5s both ease;
+  animation:slideOutLeft 0.5s both ease;
+}
+
+/* ANIMATIONS
+============================================================================= */
+/* slide out to the left */
+@keyframes slideOutLeft {
+  to    { transform: translateX(-200%); }
+}
+@-moz-keyframes slideOutLeft {
+  to    { -moz-transform: translateX(-200%); }
+}
+@-webkit-keyframes slideOutLeft {
+  to    { -webkit-transform: translateX(-200%); }
+}
+
+/* slide in from the right */
+@keyframes slideInRight {
+  from  { transform:translateX(200%); }
+  to    { transform: translateX(0); }
+}
+@-moz-keyframes slideInRight {
+  from  { -moz-transform:translateX(200%); }
+  to    { -moz-transform: translateX(0); }
+}
+@-webkit-keyframes slideInRight {
+  from  { -webkit-transform:translateX(200%); }
+  to    { -webkit-transform: translateX(0); }
+}
+/*******HomeButton********/
+#homebutton {
+  background: transparent;
+  display: inline-block;
+  height: 55px;
+  margin-left: 20px;  
+  margin-top: 20px;
+    position: relative;
+    width: 78px;
+}
+#homebutton:before {
+  border-bottom: 30px solid #000000;
+  border-left: 38px solid transparent;
+  border-right: 38px solid transparent;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: -30px;
+  width: 0;
+}
+/********************RATING STARS**********************/
+@import "compass/css3";
+
+.star-rating {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  
+  .star {
+    padding: 1px;
+    color: #ddd;
+    font-size: 20px;
+    text-shadow: .05em .05em #aaa;
+    list-style-type: none;
+    display: inline-block;
+    cursor: pointer;
+
+    &.filled {
+      color: #fd0;
+    }
+  }
+
+  &.readonly .star.filled {
+    color: #666;
+  }
+}
+
+/****************ADD INGRIDIENT********************/
+.addingredient{
+
+  background-color: transparent;
+  color: purple;
+  border-radius: 100%;
+  border: 1px solid purple;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+
+  
+  top: -10px;
+}
+
+.addingredient:hover{
+
+  background-color: purple;
+  color: white;
+
+}
+
+
+.mychevron
+{
+  color: purple;
+  font-size: 25px;
+  width: 35px;
+  height: 35px;
+  border: 1px solid purple;
+
+  line-height: 35px;
+
+  text-align: center;
+
+  padding: 2px;
+
+  margin-top: 8px;
+  margin-left: 20px;
+
+  border-radius: 50%;
+}
+
+.mychevron:hover
+{
+  color: white;
+  background-color: purple;
+  box-shadow: 2px 2px 2px #333333;
+}
+
+/*****************************DOUBLE BORDER***********************************/
+#doubleBorder
+{
+  position:relative; 
+  z-index:5; 
+  padding:10px; 
+  background:#fff; 
+  border:3px solid #32bff2;
+
+ }
+
+#doubleBorder:before
+{
+  content:"";
+  display:block; 
+  position:absolute; 
+  z-index:-1; 
+ 
+}
+
+/******************************SETTING BUTTON**************************/
+#setting{
+color:#899499; 
+font-weight:300;
+font-size: 3.15em;
+margin-left: 335px
+
+}
+
+#setting:hover {
+
+color:#000;
+
+}
+
+/*****************ProfileButtonToggle******************/
+
+.toggleButton{
+
+  background-color: transparent;
+  color: #8e0808;
+  border-radius: 100%;
+  border: 1px solid #8e0808;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+
+  
+  top: -10px;
+}
+
+.toggleButton:hover{
+
+  background-color: #8e0808;
+  color: white;
+
+}
+
+/*****************Profile Accordion****************/
+
+button.accordion {
+    background-color: rgb(107,62,133);
+    color: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    height: 63px;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 2.05em;
+    font-family: soho;
+    font-weight: 900;
+    transition: 0.4s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #fff;
+     color: rgb(107,62,133);
+     border : 2px solid rgb(107,62,133);
+
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #fff;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion:after, button.accordion:hover{
+
+color: rgb(107,62,133);
+
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align:center;
+    padding: 12px;
+    
+}
+
+tr:nth-child(even) {
+    background-color: #c0b0c4;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 24px;
+  top: 5px
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 2.5px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 28px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*************Search Input*************/
+#searchInput { width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+#searchInput:focus{
+  width:50%;
+
+
+
+}

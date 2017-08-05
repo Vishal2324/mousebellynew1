@@ -1,0 +1,129 @@
+<div class="row" style="margin: auto; width: 100%;">
+<div class="" style="margin: auto; width: 100%; border: 0px solid red;">
+
+  <div id="form-container">
+
+      <div class="page-header text-center">
+          <h2 style="">Home Chef</h2>
+
+          <br>
+          <!-- the links to our nested states using relative paths -->
+          <!-- add the active class if the state matches our ui-sref -->
+
+          <div id="signupErrorModal" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+
+			    <!-- Modal content-->
+			    <div class="modal-content" style="text-align: center; margin-top: 70px;">
+			      <div class="modal-body">
+			      	<label class="signupMouselabel" style="">Mouse</label>
+					<label class="signupBellylabel" style="">Belly</label>
+					<br>
+					<br>
+			        <p ng-if="Part1Errors" class="alert alert-danger" style="font-size: 32px; margin: auto; width: 80%;">Please fill in the data for Part One correctly.</p>
+			        <br>
+
+			        <p ng-if="!Part1Errors && Part2Errors" class="alert alert-danger" style="font-size: 32px; margin: auto; width: 80%;">Please fill in the data for Part Two correctly.</p>
+			        <br>
+
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+
+			  </div>
+			</div>
+
+      <div id="termsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content" style="text-align: center; margin-top: 70px;">
+            <div class="modal-body">
+              <label class="signupMouselabel" style="">Mouse</label>
+              <label class="signupBellylabel" style="">Belly</label>
+              <br>
+              <br>
+                <!-- toggle t&c -->
+     <script>
+$(".toggle").click(function () {
+    $("div.d1").toggleClass("hidden unhidden");
+});
+</script>
+                <input type="checkbox" ng-model="checked"><p>I agree to the Terms & Conditions.</p><br>
+                <button  class="btn btn-link">Terms & Conditions</button>
+                 <button class="toggle" class="btn btn-link">Privacy Policy</button>
+                    <div class="d1">
+                    Privacy Policy – Your Privacy Rights
+This Privacy Policy is an agreement between you and Mousebelly. Along with our representatives, officers, shareholders, subsidiaries, affiliates, parents, employees, and agents (collectively “Mousebelly.com” or “we” or “us” or “our”), we provide the Website at www.mousebelly.com to you subject to the following Policy, which you acknowledge, agree to and consent to by using the Website.
+This Privacy Policy may be amended by us from time to time at our sole discretion. Please periodically review the controlling version of the Policy. By continuing to use the Website subsequent to us making available an amended version of the Policy, you thereby acknowledge, agree and consent to such amendment. You cannot create an account, buy our products or subscribe to our services without agreeing to this policy.
+You represent that you are at least 18 years old and not a person barred from receiving services under the laws of India or other applicable jurisdictions.
+Information We Collect
+We do not collect any personally identifiable information about you unless you voluntarily submit such information to us. “Personally identifiable information” includes individually identifiable information about an individual consumer collected online by us from the individual, including any of the following: (1) a first and last name; (2) a physical address, including without limitation a street name and name of a city or town; (3) an e-mail address; (4) a telephone or fax number; or (5) any other identifier that permits the physical or online contacting of a specific individual; or (6) credit card information. The types of personally identifiable information that we may request include your name, address, e-mail address, and telephone number. We may store your personally identifiable information alongside non-personally identifiable information about you.
+We do not knowingly collect personally identifiable information from children under the age of 18. If you are under 18, please do not submit personally identifiable information to us or use the Website.
+We may collect non-personally identifiable information about you in a number of ways, including tracking your Internet activities through your IP address, computer settings or most-recently visited URL. We may also ask you to directly provide certain non-personally identifiable information about yourself, such as your food preferences.
+When you use the Website we might insert some instructions on your computer or mobile device. These instructions will be in the form of a “cookie” or similar file. Cookies are small pieces of instruction stored on your hard drive or device, not on our Website. Cookies may help you navigate the Website as easily as possible.
+One form of cookie we may use is associated with Google Analytics advertising. Our participation in the Google Analytics program will enable Google to collect non-personally identifying information about your usage of the Website and the Internet. For more about how Google uses that data, and how to opt out of Google Analytics, please see this webpage: https://www.google.com/policies/privacy/partners/.
+We may also use web beacons. A web beacon is an invisible graphic on a web page or email that is programmed to collect non-personally identifiable information about the use of a given website or newsletter, such as whether or not an email is opened and viewed.
+
+
+“Do Not Track”
+Some browsers have a “do not track” feature that lets you tell websites that you do not want to have your online activities tracked. At this time, we do not respond to browser “do not track” signals.
+How We Use Your Information
+We typically use your information to deliver products to you and to improve the design and performance of the Website. We may use your information to deliver to you, among other things, communications, newsletters and marketing materials from us. Your information may also be used to contact you when necessary.
+Except as otherwise set forth in this Privacy Policy, we will not provide access to your personally identifiable information to third parties for any purpose.
+By using the service, you do consent to us providing your information to third parties that assist us in the operation and delivery of our Website, products and services. We will take reasonable steps to require any such third parties to comply with the terms of this Privacy Policy.
+Your information will remain subject to the terms of this Privacy Policy even if we undergo a business transition. However, we may transfer your information to a successor person or entity upon an acquisition or other corporate reorganization. You hereby consent to such transfers, and we may assign and transfer all of the rights, benefits, duties, and obligations of this Privacy Policy.
+We may disclose your information if, among other things, we have a good faith belief that we are required to do so by law or if acting with a good faith belief that such disclosure is reasonably necessary to: (1) comply with legal process; (2) enforce this Policy or the Terms and Conditions; (3) respond to legal claims; (4) respond to your requests for customer services or transaction completion; or (5) protect the rights, property or personal safety of the Website's users or the public.
+If you do not want us to share or disclose your information as stated herein, please do not use the Website or submit personally identifiable information.
+Your Privacy Rights
+Customers who are Indian residents can request certain information regarding disclosure of personally identifiable information to third parties for their direct marketing purposes. To make such a request, please write to us at: to support@mousebelly.com. However, at this time we do not share any of your personally identifiable information with third parties for direct marketing purposes.
+Security and Storage
+We primarily store your information in India. Some information may be stored elsewhere. You authorize us to do so.
+We take commercially reasonable steps to safeguard and deter unauthorized access to your information. When we collect or transmit sensitive information such as a credit or debit card number, we use industry standard methods to protect that information. Although we take reasonable measures to safeguard against unauthorized disclosures of your information, no e-commerce platform, website, electronic database or system is completely secure.
+
+
+Third Party Websites
+The Website might contain links to other websites, such as “social media” sites. We are not responsible for the privacy practices or the content of such services. When you submit information or data to third parties, their privacy policies, not ours, will govern their use of the information and data. You should review the privacy policies and terms of service of all such third parties. We do not make any representations regarding the policies or practices of such third parties.
+Accessing or Updating Your Information
+We allow you to access and change or modify your information as previously provided. You may do so by contacting us at support@mousebelly.com. To protect your privacy and security, we will take reasonable steps to verify your identity before granting access or making changes or modifications. Unfortunately, we cannot always ensure that such changes or modifications will be reflected in all iterations of your information as previously stored.
+Please remember that any information that you disclose on public portions of the Website, such as “comments” forums, may become widespread. You should exercise caution when deciding to disclose your personally identifiable information.
+                    </div>
+
+               <br>
+                 <button class="btn btn-danger" ng-model="button" ng-disabled="!checked">Submit</button>
+
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div> -->
+          </div>
+
+        </div>
+      </div>
+
+          <div id="status-buttons" class="text-center">
+          		<!-- eat-click-if="ShowPart1Errors()" -->
+
+              <a eat-click-if="Part1Filled == true && ShowPart2Errors()" ui-sref-active="active" ui-sref=".profile"><span>1</span> Profile</a>
+              <a eat-click-if="ShowPart1Errors()" ui-sref-active="active" ui-sref=".interests" ng-click="LoadPart2()" ><span>2</span> Address</a>
+              <a eat-click-if="ShowPart1Errors() || ShowPart2Errors()" ui-sref-active="active" ui-sref=".payment"><span>3</span> Picture</a>
+          </div>
+      </div>
+
+      <!-- use ng-submit to catch the form submission and use our Angular function -->
+      <form id="signup-form">
+          <!-- our nested state views will be injected here -->
+          <div id="form-views" ui-view></div>
+      </form>
+
+  </div>
+
+  <!-- show our formData as it is being typed -->
+  <!-- <pre>
+    {{ formData }}
+  </pre> -->
+
+</div>
+</div>

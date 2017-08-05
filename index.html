@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+
+	<title>Mouse Belly</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/png" href="images/logo.png">
+
+	<link rel="stylesheet" href="references/css/bootstrap.min.css">
+ <script src="references/js/jquery.min.js"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+   <script src="references/js/bootstrap.min.js"></script>
+
+   <link rel="stylesheet" href="references/css/croppie.css">
+   	<script src="references/js/croppie.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../references/css/mousebelly.css">
+
+  <script src="references/js/angular.min.js"></script>
+  <script src="references/js/angular-route.js"></script>
+
+  <script src="references/js/angular-ui-router.min.js"></script>
+    <script src="references/js/angular-animate.min.js"></script>
+   </script>
+
+    <link rel="stylesheet" href="references/css/kendo.common-material.min.css"/>
+
+    <link rel="stylesheet" href="references/css/kendo.material.min.css"/>
+    <link rel="stylesheet" href="references/css/kendo.material.mobile.min.css"/>
+    <link rel="stylesheet" href="references/css/angular-material-calendar.min.css"/>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.0/angular-material.min.css"/>
+
+	  <script src="references/js/angular-material-calendar.min.js"></script>
+
+
+    <script src="references/js/jquery.popupoverlay.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-aria.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-sanitize.min.js"></script>    
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.0/angular-material.min.js"></script>
+
+  
+
+    <script src="references/js/kendo.all.min.js"></script>
+
+    <!-- <link href="custombox.min.css" rel="stylesheet">
+    <script src="custombox.min.js"></script>
+    <script src="custombox.legacy.min.js"></script> -->
+
+ <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+	<script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="signupapp.js"></script>
+
+	<script type="text/javascript" src="indexController.js"></script>
+	<script type="text/javascript" src="formController.js"></script>
+	<script type="text/javascript" src="formController2.js"></script>
+	<script type="text/javascript" src="selectsignupController.js"></script>
+	<script type="text/javascript" src="addRecipiesController.js"></script>
+<!-- 	<script type="text/javascript" src="profileController.js"></script> -->
+	<script type="text/javascript" src="calendarController.js"></script>
+		<script type="text/javascript" src="homechefController.js"></script>
+		<script type="text/javascript" src="categoriesController.js"></script>
+	  
+	<!-- UI CALENDER CDN -->
+
+</head>
+
+<body class="bodystyle" ng-controller="indexController">
+	<div class="pageleft"></div>
+	<div class="pageright"></div>
+
+
+<div id="loginModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content" style="text-align: center; margin-top: 70px;">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <br>
+
+        <label class="loginMouselabel" style="">Mouse</label>
+		<label class="loginBellylabel" style="">Belly</label>
+
+		<h3 style="margin-top: -0px;">Login</h3>
+
+      </div>
+      <div class="modal-body" style="margin: auto; min-width: 50%; max-width: 75%; text-align: center;">
+
+        <div class="container-fluid" style="text-align: center; border: 0px solid red;">
+
+        	<input type="email" class="form-control" style="width: 100%;" placeholder="Enter Email" />
+	      	<br>
+	      	<input type="password" class="form-control" placeholder="Enter Password" />
+	      	<br>
+	      	<button class="btn btn-success" ng-click="Login()">Log In</button>
+
+	      	<div id="loginloader" style="margin: auto; width: 100%;position: absolute; left: 5px; left: -2px; top: 15px;border: 0px solid red; display: none; text-align: center;">
+      		<div class="loginloader" style=""></div>
+
+					<span style="text-align: center; width: 100%;">
+					<img class="innerloginloader" src="images/MB_black_small.png" style="">
+					</span>
+				</div>
+
+        </div>
+
+
+
+
+
+      </div>
+      <div class="modal-footer" style="text-align: center;">
+        <button type="button" class="btn btn-link" data-dismiss="modal" style="font-size: 13px;">Forgot Password</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="topnav" id="myTopnav">
+  <span href="#home" style="margin-right: 70px;">
+ <img src="images/MB.png" style="height: 6.2em; margin-left: 15px; margin-top: 5px; background-color: #8B008B; border-radius: 50%; border: 2px solid white;" class="">
+
+	<div class="MouseBellyLabel" style="text-align: center;">
+
+		<div style="border: 0px solid red; bottom:1px; margin-top: 0px; height: 110%;padding: 15px; text-align: center; top: 0px; position: relative;line-height: 1em;">
+			<label class="Mouselabel" style="border: 0px solid red;">Mouse</label>
+			<label class="Bellylabel" style="border: 0px solid red;">Belly</label>
+		</div>
+
+
+	</div>
+	</span>
+
+
+  <a style="" class="SignupButton" href="#!signupChoice" >Sign Up</a>
+
+	<a style="" class="LoginButton" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
+
+	&nbsp;&nbsp;
+	&nbsp;&nbsp;
+
+  <a href="javascript:void(0);" class="icon LoginButton" onclick="myFunction()"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+</div>
+
+
+<!--  -->
+<!--  -->
+
+	<div id="masterLoader" style="display: none;">
+	  <div class="loader"></div>
+	  <div class="innerloader">
+	  	<img src="images/MB_black.png" width="450" style="margin-left: 20px;" >
+	  </div>
+  </div>
+
+  <div style="border: 0px solid red; margin-left: 35px; margin-right: 35px; " ng-view></div>
+
+</body>
+
+</html>

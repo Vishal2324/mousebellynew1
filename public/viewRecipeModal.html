@@ -1,0 +1,40 @@
+	<div class="row" style="margin-top: -20px">
+		<div class="col-lg-4"></div>
+		<div class="col-lg-4">
+		<h3 style="color:#8e0808;font-family:'Carrois Gothic', sans-serif; font-weight:200;font-size: 2.55em;text-align: center;">{{ currRecipe.RecipeName }}</h3>
+		</div>
+		<div class="col-lg-4" style="margin-top:23px">
+		<a ui-sref="recipeModal.editRecipe" style="color:#8e0808;font-family:'Carrois Gothic', sans-serif; font-weight:200;font-size: 1.55em;margin-left: 200px;">EDIT<span class="	glyphicon glyphicon-edit"></span></a>
+		</div>
+	</div>
+			<div class="container-fluid">
+			<div class="col-lg-4" style="margin-top: 15px">
+				<img src="images/gulabjamun.jpeg" width="220px" height="200px">
+				
+			</div>
+			<div class="col-lg-4" style="margin : auto">
+				
+				<h3 style="color:#155b05;font-family: 'Carrois Gothic', sans-serif; font-weight:200;font-size: 1.15em;margin-left: 35px">Serving Size  :  {{ currRecipe.ServingSize }}</h3>
+				<h3 style="color:#155b05;font-family: 'Carrois Gothic', sans-serif; font-weight:200;font-size: 1.15em;margin-left: 35px">Time To Make  :  {{ currRecipe.timetoMake }}  Minute(s)</h3>
+				<h3 style="color:#155b05;font-family: 'Carrois Gothic', sans-serif; font-weight:200;font-size: 1.35em;margin-left: 35px">Ingredients Used  :</h3>
+
+				<div ng-repeat="x in currRecipe.ingredients track by $index">
+					
+				 <h3 style="color:#000000;font-family: 'Carrois Gothic', sans-serif; font-weight:200;font-size: 1.15em;margin-left: 35px">{{$index + 1 }}.&nbsp;&nbsp;{{ x.ingredientName }} &nbsp;&nbsp;&nbsp;{{ x.ingredientQty }} {{ x.ingredientUnit }}</h3>
+				</div>
+				</div>
+				<div class="col-lg-4" style="margin: auto;">
+				<h3 style="color:#155b05;font-family: 'Carrois Gothic', sans-serif; font-weight:200;font-size: 1.35em;text-align: center;">Steps To Make :</h3>
+				<hr>
+					<div ng-repeat="x in currRecipe.steps track by $index">
+					<p style="word-wrap: break-word;">{{$index + 1 }}.{{ x.step }}</p>
+						
+					</div>
+				</div>
+			
+				
+			</div> 
+	<!-- 		<br>
+
+			<button class="btn btn-warning btn-block"  ui-sref="recipeModal.editRecipe" ng-click="editRecipe($index)">Edit Recipe</button>  -->
+			<hr> 
