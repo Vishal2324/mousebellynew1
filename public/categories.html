@@ -96,7 +96,7 @@
 	
 		<hr>
 
-	<div class="container-fluid table table-striped">
+	<div class="container-fluid category">
  
 	  <div class="col-lg-2" style="text-align: center;">
 	  	<label style="color:#155b05;font-family: 'Carrois Gothic', sans-serif; font-weight:500;font-size: 1.55em;">##</label>	
@@ -125,23 +125,32 @@
 	<div class="container-fluid table table-striped" ng-repeat="x in category_Arr track by $index">
 	<div class="row">
 	  <div class="col-lg-2" style="text-align: center;">
+
+	  		<label class="categoryele" style="color:#155b05;font-family: 'Carrois Gothic', sans-serif; font-weight:500;font-size: 1.55em;">##</label>
+
 	  		<label style="font-size: 1.25em; font-family: 'Carrois Gothic', sans-serif; font-weight:200;">{{$index+1}}</label>
 	  </div>
 
 	  <div class="col-lg-2" style="text-align: center;">
+		
+				<label class="categoryele" style="color:#155b05;font-family: 'Carrois Gothic', sans-serif; font-weight:500;font-size: 1.55em;">Category Name</label>
+
 			<label style="font-size: 1.25em; font-family: 'Carrois Gothic', sans-serif; font-weight:200;">{{x.categoryName}}</label>	  	
 	  </div>
 
 	  <div class="col-lg-4" style="text-align: center;word-wrap: break-word">
+
+	  		<label class="categoryele" style="color:#155b05;font-family: 'Carrois Gothic', sans-serif; font-weight:500;font-size: 1.55em;">Category Description</label>
+
 	  <p style="font-size: 1.25em; font-family: 'Carrois Gothic', sans-serif; font-weight:200;">{{x.categoryDescription}}</p>	  
 	  </div>
 
 	   <div class="col-lg-2" style="text-align: center;">
-	  	<button class="btn btn-warning" ng-click="editCategory($index)">Edit</button>
+	  	<button style="margin: 5px" class="btn btn-warning" ng-click="editCategory($index)">Edit</button>
 	  </div>
 
 	  <div class="col-lg-2" style="text-align: center;">
-	  	<button class="btn btn-danger" ng-click="deleteCategory($index)">Delete</button>
+	  	<button style="margin: 5px" class="btn btn-danger" ng-click="deleteCategory($index)">Delete</button>
 	  </div>
 	  
 	  </div>
