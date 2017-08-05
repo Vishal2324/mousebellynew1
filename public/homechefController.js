@@ -8,13 +8,7 @@ app.controller("homechefController",['$scope','$location','$state','$window','$h
    
      }
 
-    $scope.homechef_Arr = [
-     {"categoryId":"01",
-    "categoryName":"South Indian",
-    "categoryDescription":"Dosasambarvada",
-      },
-    ]
-
+   
 }]);
 
 

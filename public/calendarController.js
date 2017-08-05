@@ -20,7 +20,8 @@ app.controller("calendarController",['$scope','$location','$window','$http','$st
     };
 
     $scope.dayClick = function(date) {
-		$('#myDIV').show("slide", { direction: "left" }, 1000);
+		$('#myDIV').show( "slide", { direction: "left" }, 1000);
+		
       $scope.msg = "You clicked " + $filter("date")(date, "MMM d, y h:mm:ss a Z");
     };
 

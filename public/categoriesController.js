@@ -2,6 +2,7 @@
 
  	$scope.category = [];
  	$scope.currCategory = [];
+ 	$scope.currIndex = 0;
 
       $scope.category_Arr = [
      {"categoryId":"01",
@@ -22,11 +23,23 @@
       },
     ]
 
-   $scope.addCategory = function()
+   /*$scope.addCategory = function()
    {
 
    	console.log("add");
-	$('#addhomechefModal').modal('show');
+	$('#addCategoryModal').modal('show');
+
+
+   }*/
+   $scope.loading = true;
+
+   $scope.fetchCategoryFromDB = function()
+   {
+   	 masterLoaderShow(true);
+   	 window.setTimeout(function(){
+   	 masterLoaderShow(false);
+    },5000);
+
 
 
    }
@@ -42,12 +55,76 @@
 
   	console.log("edit");
   	$('#homechefModal').modal('show');
-  	$scope.currCategory = $scope.category_Arr[arg];
+  	$scope.currIndex = arg;
+  	$scope.currCategory = angular.copy($scope.category_Arr[arg]);
   	 console.log( $scope.currCategory );
 
 
   }
 
+   $scope.AddCategoryName = '';
+  $scope.addCategoryNameError = false;
+  $scope.addCategoryNameTouched = false;
+
+  $scope.addCategoryName = function()
+  {
+  	var regex = /^.{2,20}$/;
+  	$scope.addCategoryNameError = !regex.test($scope.AddCategoryName); 
+  	  $scope.addCategoryNameTouched = true; 	
+  }
+
+
+  $scope.AddCategoryDesc = '';
+  $scope.addCategoryDescError = false;
+  $scope.addCategoryDescTouched = false;
+
+  $scope.addCategoryDesc = function()
+  {
+  	var regex = /^.{2,160}$/;
+  	$scope.addCategoryDescError = !regex.test($scope.AddCategoryDesc); 
+  	  $scope.addCategoryDescTouched = true; 	
+  }
+
+/************EDIT CATEGORY VALIDATION****************/
+	
+
+  $scope.editCategoryNameError = false;
+  $scope.editCategoryNameTouched = false;
+
+  $scope.editCategoryName = function()
+  {
+  	var regex = /^.{2,20}$/;
+  	$scope.editCategoryNameError = !regex.test($scope.currCategory.categoryName); 
+  	  $scope.editCategoryNameTouched = true; 	
+  }
+
+
+  
+  $scope.editCategoryDescError = false;
+  $scope.editCategoryDescTouched = false;
+
+  $scope.editCategoryDesc = function()
+  {
+  	var regex = /^.{2,160}$/;
+  	$scope.editCategoryDescError = !regex.test($scope.currCategory.categoryDescription); 
+  	  $scope.editCategoryDescTouched = true; 	
+  }
+
+  $scope.editCategoryToDB = function(){
+
+  	var success = true;
+    masterLoaderShow(true);
+
+    window.setTimeout(function(){
+    	if (success)
+    	{
+    		$scope.category_Arr[$scope.currIndex] = $scope.currCategory;
+    	}
+    	
+      masterLoaderShow(false);
+    },5000);
+
+  }
    
 }]);
 

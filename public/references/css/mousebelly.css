@@ -465,7 +465,7 @@
   background-repeat: repeat;
   background-image: url("/images/doodle5.jpg") , linear-gradient(#000000, #d13531);
   top: 0px;
-  z-index: -1;
+  z-index: 1;
 
   box-shadow: inset 0px 0px 10px #777777;
 }
@@ -482,7 +482,7 @@
   background-repeat: repeat;
   background-image: url("/images/doodle5.jpg") , linear-gradient(#000000, #d13531);
   top: 0px;
-  z-index: -1;
+  z-index: 1;
 
   box-shadow: inset 0px 0px 10px #777777;
 }
@@ -548,6 +548,8 @@
     overflow: hidden;
     background-image: url('/images/mastback.jpg');background-size: cover;box-shadow: 0px 0px 0px #777777;
     min-height: 100px;
+    z-index: 2;
+    position: relative;
 }
 
 /* Style the links inside the navigation bar */
@@ -1212,5 +1214,11 @@ input:checked + .slider:before {
   width:50%;
 
 
+
+}
+
+textarea{
+
+resize: none;
 
 }
